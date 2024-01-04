@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ffecd2, #ffdde1);
+}
+
+/* Header Styles */
+header {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ffecd2, #ffdde1);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(253, 227, 227);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* Home Section Styles */
+#home {
+  padding: 5rem;
+}
+
+.section__text,
+.section__pic-container {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* About, Services, Contact Section Styles */
+#about,
+#services,
+#contact {
+  padding: 5rem;
+  background: linear-gradient(to right, #ffecd2, #ffdde1);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 8rem;
+}
+
+/* Footer Styles */
+footer {
+  background: white;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-color-1 {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.btn-color-1:hover {
+  background-color: #ff574e;
+}
